@@ -1,6 +1,14 @@
 # whimsiness
 Funky bash scripts ayo
 
+**dockify.sh**
+- put it in /.local/share/nautilus/scripts
+- now you can transform any file or folder as menu item
+- and pin it on your dock as if it were an app :)
+
+![Banner](./img/dockify.png)
+
+
 **Asciirage.sh**
 - Interactive script with interactive menus
 - Features colors, colors are rad
@@ -9,4 +17,8 @@ Funky bash scripts ayo
 - Can save and load drawings
 - Its all bash
 
-![Banner](./asciirage.png)
+![Banner](./img/asciirage.png)
+
+
+
+
