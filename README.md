@@ -3,7 +3,7 @@ Funky bash scripts ayo
 
 **dockify.sh**
 - put it in /.local/share/nautilus/scripts
-- now you can transform any file or folder as menu item
+- now from a right click you can transform any file or folder as menu item
 - and pin it on your dock as if it were an app :)
 
 ![Banner](./img/dockify.png)
