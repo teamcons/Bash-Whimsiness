@@ -9,6 +9,14 @@ Funky bash scripts ayo
 ![Banner](./img/dockify.png)
 
 
+**Throw**
+- Throw as much dices as you want, whichever dices you want, idk im not ur mom
+- Has an option for nonfancy output, for scripts
+- I used that while DMing, for secret intuition/perception PC throws, environmental stuff, NPCs...
+
+![Banner](./img/Throw.png)
+
+
 **Asciirage.sh**
 - Interactive script with interactive menus
 - Features colors, colors are rad
