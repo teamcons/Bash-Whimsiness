@@ -6,33 +6,36 @@
 THING="$1"
 DESKTOPFILE=~/.local/share/applications/${THING}.desktop
 
-#shift # Remove first argument
-#KEYWORDS="$*"
+ICON=$(gio info "$THING" | grep standard::icon | cut -d ' ' -f 5 | cut -d ',' -f 1)
 
+# TODO Categories and keywords
+
+if [ -d $THING ] ; then KEYWORDS="pinned;folder;manager;explore;filesystem;"
+elif [ -f $THING ] ; then KEYWORDS="pinned;file;"
+else KEYWORDS="pinned;"
+fi
 
 ######## SCRIPT ########
-
-# TODO : Icon, get standard one from
-# gio info -a standard::icon 
-
-# Option: select an icon ? Open Zenity in wherever theme is
-# Option: --setings option ?
-
 cat << EOF > "$DESKTOPFILE"
 [Desktop Entry]
 Name = $THING
-Comment = Pinned folder
+Comment = $PWD/$THING
 Exec = xdg-open $PWD/${THING// /\\ }
-Icon = folder
+Icon = $ICON
 Type = Application
-Keywords = folder;manager;explore;filesystem
+Keywords = $KEYWORDS
 Terminal = false
 Categories = FileManager;
-Actions = Unpin;
+Actions = Unpin;Edit;
 
 [Desktop Action Unpin]
-Name = Unpin the folder
-Exec = rm -f $HOME/.local/share/applications/${THING// /\\ }.desktop
+Name = Unpin
+Exec = rm -f $HOME/.local/share/applications/${THING// /\\ }.desktop && notify-send "Dockify" "Removed $THING"
+
+[Desktop Action Edit]
+Name = Edit
+Exec = xdg-open $HOME/.local/share/applications/${THING// /\\ }.desktop
 
 EOF
 
+notify-send "Dockify" "$THING"
