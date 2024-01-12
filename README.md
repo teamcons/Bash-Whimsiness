@@ -2,12 +2,18 @@
 Funky bash scripts ayo
 
 ## Nautilus scripts/ ##
-**pin**
+
+
+<p float="left">
+  <img src="/img/pin.png" width="100" />
+  **pin**
 - put it in /.local/share/nautilus/scripts
 - now from a right click you can transform any file or folder as menu entry
 - and pin it on your dock as if it were an app :)
 - include actions: delete the entry, edit it, open the locasion of the file or folder
 - Theoretically desktop agnostic
+  
+</p>
 
 ![pin](./img/pin.png)
 
@@ -21,12 +27,10 @@ Funky bash scripts ayo
 ![Throw](./img/Throw.png)
 
 
-
-
-## **Asciirage.sh** ##
+**Asciirage.sh**
 - Interactive script with interactive menus
 - Features colors, colors are rad
-- You can change bruch, erase, navigate
+- You can change brusch, erase, navigate
 - Controlled with arrows by keyboard
 - Can save and load drawings
 - Its all bash
