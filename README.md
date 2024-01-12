@@ -7,7 +7,7 @@ Funky bash scripts ayo
 - put it in /.local/share/nautilus/scripts
 - now from a right click you can transform any file or folder as menu entry
 - and pin it on your dock as if it were an app :)
-- include actions: delete the entry, edit it, open the locasion of the file or folder
+- include actions: delete the entry, edit it, open the location of the file or folder
 - Theoretically desktop agnostic
 
 <div align="center">
@@ -31,11 +31,22 @@ Funky bash scripts ayo
 ### 📄 Asciirage.sh ###
 - Interactive script with interactive menus
 - Features colors, colors are rad
-- You can change brusch, erase, navigate
+- You can change brush, erase, navigate
 - Controlled with arrows by keyboard
 - Can save and load drawings
 - Its all bash
 
 <div align="center">
     <img src="https://github.com/teamcons/whimsiness/blob/main/img/asciirage.png" /></td>
+</div>
+
+### 📄 fix-deepin-icon-theme.sh (not up yet) ###
+Require: deepin-icon-theme installed.
+Create a local icon theme, which inherits from deepin-icon-theme, but:
+- Which also fixes nonstandard stuff in the original theme (like broken download icon).
+- Have icons made for Deepin DE be applied to GNOME apps.
+- Have deepin icons be applied a bit more broadly outside of their DE.
+
+<div align="center">
+    <img src="https://github.com/teamcons/whimsiness/blob/main/img/fix-deepin-icon-theme.png" /></td>
 </div>
