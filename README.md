@@ -11,13 +11,11 @@ Funky bash scripts ayo
 - Theoretically desktop agnostic
 
 <div align="center">
-  <table>
-    <tr>
+
       <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" /></td>
       <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" /></td>
       <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" /></td>
-    </tr>
-  </table>
+
 </div>
 
 ## random/ ##
@@ -27,11 +25,7 @@ Funky bash scripts ayo
 - I used that while DMing, for secret intuition/perception PC throws, environmental stuff, NPCs...
 
 <div align="center">
-  <table>
-    <tr>
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/Throw.png" /></td>
-    </tr>
-  </table>
+    <img src="https://github.com/teamcons/whimsiness/blob/main/img/Throw.png" /></td>
 </div>
 
 ### **Asciirage.sh** ###
