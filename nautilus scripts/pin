@@ -1,0 +1,62 @@
+#!/bin/bash
+# Made by Stella - littlepastelworld@gmail.com
+# WHAT : Create a menu entry for a file or folder, so you can put it on any dock, or open from an app launcher
+# INSTALL : Copy in ~/.local/share/applications/nautilus/scripts
+# USAGE : Right-click on a file or folder, then on "script", then on "pin". Voilà.
+# FEATURES : Right-clicks options allow to open location of the file or folder, edit the .desktop file, or 
+# LOCALIZATION : EN, DE, FR, ES
+
+######## INIT VARIABLES ########
+THING="$1"
+SAVEIN=$HOME/.local/share/applications
+DESKTOPFILE="$SAVEIN/${THING}.desktop"
+
+# Unreliable. Doesnt always get the right icon.
+ICON=$(gio info "$THING" | grep standard::icon | cut -d ' ' -f 5 | cut -d ',' -f 1)
+
+# Can be improved a lot.
+if [ -d $THING ] ; then KEYWORDS="pinned;folder;manager;explore;filesystem;"
+elif [ -f $THING ] ; then KEYWORDS="pinned;file;"
+else KEYWORDS="pinned;"
+fi
+
+
+######## SCRIPT ########
+cat << EOF > "$DESKTOPFILE"
+[Desktop Entry]
+Name = $THING
+Comment = Open $PWD/$THING
+Comment[de] = Öffnet $PWD/$THING
+Comment[fr] = Ouvre $PWD/$THING
+Comment[es] = Abrir $PWD/$THING
+Exec = xdg-open '$PWD/$THING'
+Icon = $ICON
+Type = Application
+Keywords = $KEYWORDS
+Terminal = false
+Categories = FileManager;
+Actions = Location;Edit;Unpin;
+
+[Desktop Action Location]
+Name = Open location
+Name[de] = Standort öffnen
+Name[fr] = Ouvrir l'emplacement
+Name[es] = Localización abierta
+Exec = xdg-open '$PWD'
+
+[Desktop Action Edit]
+Name = Edit
+Name[de] = Bearbeiten
+Name[fr] = Éditer
+Name[es] = Editar
+Exec = xdg-open '$DESKTOPFILE'
+
+[Desktop Action Unpin]
+Name = Unpin
+Name[de] = Loslösen
+Name[fr] = Détacher
+Name[es] = Desanclar
+Exec = rm -f '$DESKTOPFILE'
+
+EOF
+
