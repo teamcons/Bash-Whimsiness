@@ -11,10 +11,11 @@ Funky bash scripts ayo
 - Theoretically desktop agnostic
 
 <div align="center">
-<img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" />
-<img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" />
-<img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" />
-
+  <table>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" /></td>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" /></td>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" /></td>
+  </table>
 </div>
 
 ## random/ ##
