@@ -11,7 +11,21 @@ Funky bash scripts ayo
 - Theoretically desktop agnostic
 
 | !(./img/pin1.png) | !(./img/pin2.png) | !(./img/pin3.png) |
-
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" />
+      </td>
+      <td>
+         <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" />
+      </td>
+      <td>
+        <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 ## random/ ##
 ### **Throw** ###
