@@ -11,10 +11,9 @@ Funky bash scripts ayo
 - Theoretically desktop agnostic
 
 <div align="center">
-
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" /></td>
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" /></td>
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" /></td>
+<img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" />
+<img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" />
+<img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" />
 
 </div>
 
@@ -37,11 +36,7 @@ Funky bash scripts ayo
 - Its all bash
 
 <div align="center">
-  <table>
-    <tr>
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/asciirage.png" /></td>
-    </tr>
-  </table>
+    <img src="https://github.com/teamcons/whimsiness/blob/main/img/asciirage.png" /></td>
 </div>
 
 
