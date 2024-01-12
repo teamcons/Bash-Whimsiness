@@ -6,7 +6,7 @@ Right-click actions. To install, put them in ~/.local/share/nautilus/scripts
 I dont know for other file managers
 
 ### 📄 pin ###
-Transform any file or folder into app (appears in app grid or launcher, can be put into a dock)
+Transform any file or folder into a pseudo "app", so it appears in app grid or launcher, and can be put into a dock (The latter of which i was striving for)
 - Detects automagically the right icon to use
 - includes actions: remove the "app", edit it, open the location of the file or folder
 - Theoretically desktop agnostic
