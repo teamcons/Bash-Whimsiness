@@ -10,19 +10,12 @@ Funky bash scripts ayo
 - include actions: delete the entry, edit it, open the locasion of the file or folder
 - Theoretically desktop agnostic
 
-| !(./img/pin1.png) | !(./img/pin2.png) | !(./img/pin3.png) |
 <div align="center">
   <table>
     <tr>
-      <td>
-        <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" />
-      </td>
-      <td>
-         <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" />
-      </td>
-      <td>
-        <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" />
-      </td>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" /></td>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" /></td>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" /></td>
     </tr>
   </table>
 </div>
@@ -33,8 +26,13 @@ Funky bash scripts ayo
 - Has an option for nonfancy output, for scripts
 - I used that while DMing, for secret intuition/perception PC throws, environmental stuff, NPCs...
 
-![Throw](./img/Throw.png)
-
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/Throw.png" /></td>
+    </tr>
+  </table>
+</div>
 
 ### **Asciirage.sh** ###
 - Interactive script with interactive menus
@@ -44,8 +42,13 @@ Funky bash scripts ayo
 - Can save and load drawings
 - Its all bash
 
-![asciirage](./img/asciirage.png)
-
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/asciirage.png" /></td>
+    </tr>
+  </table>
+</div>
 
 
 
