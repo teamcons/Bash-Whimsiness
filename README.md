@@ -1,7 +1,7 @@
 # whimsiness
 Funky bash scripts ayo
 
-## Nautilus scripts/
+## Nautilus scripts/ ##
 **pin**
 - put it in /.local/share/nautilus/scripts
 - now from a right click you can transform any file or folder as menu entry
@@ -12,7 +12,7 @@ Funky bash scripts ayo
 ![pin](./img/pin.png)
 
 
-## random/
+## random/ ##
 **Throw**
 - Throw as much dices as you want, whichever dices you want, idk im not ur mom
 - Has an option for nonfancy output, for scripts
@@ -23,7 +23,7 @@ Funky bash scripts ayo
 
 
 
-**Asciirage.sh**
+## **Asciirage.sh** ##
 - Interactive script with interactive menus
 - Features colors, colors are rad
 - You can change bruch, erase, navigate
