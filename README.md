@@ -1,9 +1,9 @@
 # whimsiness
 Funky bash scripts ayo
 
-## Nautilus scripts/ ##
+## 📂 Nautilus scripts/ ##
 
-###  **pin** ###
+### 📄 **pin** ###
 - put it in /.local/share/nautilus/scripts
 - now from a right click you can transform any file or folder as menu entry
 - and pin it on your dock as if it were an app :)
@@ -18,8 +18,8 @@ Funky bash scripts ayo
   </table>
 </div>
 
-## random/ ##
-### **Throw** ###
+## 📂 random/ ##
+### 📄 **Throw** ###
 - Throw as much dices as you want, whichever dices you want, idk im not ur mom
 - Has an option for nonfancy output, for scripts
 - I used that while DMing, for secret intuition/perception PC throws, environmental stuff, NPCs...
@@ -28,7 +28,7 @@ Funky bash scripts ayo
     <img src="https://github.com/teamcons/whimsiness/blob/main/img/Throw.png" /></td>
 </div>
 
-### **Asciirage.sh** ###
+### 📄 **Asciirage.sh** ###
 - Interactive script with interactive menus
 - Features colors, colors are rad
 - You can change brusch, erase, navigate
