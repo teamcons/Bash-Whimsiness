@@ -3,7 +3,9 @@ Funky bash scripts ayo
 
 ## 📂 Nautilus scripts/ ##
 Right-click actions. To install, put them in ~/.local/share/nautilus/scripts
+
 I dont know for other file managers
+
 
 ### 📄 pin ###
 Transform any file or folder into a pseudo "app", so it appears in app grid or launcher, and can be put into a dock (The latter of which i was striving for)
@@ -19,8 +21,11 @@ Transform any file or folder into a pseudo "app", so it appears in app grid or l
   </table>
 </div>
 
+
+
 ## 📂 random/ ##
 Cant classify tis stuff
+
 
 ### 📄 Throw.sh ###
 - Throw as much dices as you want, whichever dices you want, idk im not ur mom
@@ -30,6 +35,8 @@ Cant classify tis stuff
 <div align="center">
     <img src="https://github.com/teamcons/whimsiness/blob/main/img/Throw.png" /></td>
 </div>
+
+
 
 ### 📄 Asciirage.sh ###
 - Interactive script with interactive menus
@@ -43,6 +50,8 @@ Cant classify tis stuff
     <img src="https://github.com/teamcons/whimsiness/blob/main/img/asciirage.png" /></td>
 </div>
 
+
+
 ### 📄 fix-deepin-icon-theme.sh (not up yet) ###
 Require: deepin-icon-theme installed.
 Create a local icon theme, which inherits from deepin-icon-theme, but:
@@ -53,3 +62,5 @@ Create a local icon theme, which inherits from deepin-icon-theme, but:
 <div align="center">
     <img src="https://github.com/teamcons/whimsiness/blob/main/img/fix-deepin-icon-theme.png" /></td>
 </div>
+
+
