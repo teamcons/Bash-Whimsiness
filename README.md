@@ -8,6 +8,7 @@ Funky bash scripts ayo
 - and pin it on your dock as if it were an app :)
 - include actions: delete the entry, edit it, open the locasion of the file or folder
 - Theoretically desktop agnostic
+
 ![pin](./img/pin.png)
 
 
@@ -18,6 +19,8 @@ Funky bash scripts ayo
 - I used that while DMing, for secret intuition/perception PC throws, environmental stuff, NPCs...
 
 ![Throw](./img/Throw.png)
+
+
 
 
 **Asciirage.sh**
