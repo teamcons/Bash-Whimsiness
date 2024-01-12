@@ -1,20 +1,23 @@
 # whimsiness
 Funky bash scripts ayo
 
-**dockify.sh**
+#Nautilus scripts/
+**pin**
 - put it in /.local/share/nautilus/scripts
-- now from a right click you can transform any file or folder as menu item
+- now from a right click you can transform any file or folder as menu entry
 - and pin it on your dock as if it were an app :)
+- include actions: delete the entry, edit it, open the locasion of the file or folder
+- Theoretically desktop agnostic
+![pin](./img/pin.png)
 
-![Banner](./img/dockify.png)
 
-
+#random/
 **Throw**
 - Throw as much dices as you want, whichever dices you want, idk im not ur mom
 - Has an option for nonfancy output, for scripts
 - I used that while DMing, for secret intuition/perception PC throws, environmental stuff, NPCs...
 
-![Banner](./img/Throw.png)
+![Throw](./img/Throw.png)
 
 
 **Asciirage.sh**
@@ -25,7 +28,7 @@ Funky bash scripts ayo
 - Can save and load drawings
 - Its all bash
 
-![Banner](./img/asciirage.png)
+![asciirage](./img/asciirage.png)
 
 
 
