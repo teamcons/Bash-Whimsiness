@@ -5,8 +5,8 @@ Funky bash scripts ayo
 
 
 <p float="left">
-  <img src="/img/pin.png" width="100" />
-  **pin**
+  <img src="/img/pin.png" />
+###  **pin** ###
 - put it in /.local/share/nautilus/scripts
 - now from a right click you can transform any file or folder as menu entry
 - and pin it on your dock as if it were an app :)
@@ -19,7 +19,7 @@ Funky bash scripts ayo
 
 
 ## random/ ##
-**Throw**
+### **Throw** ###
 - Throw as much dices as you want, whichever dices you want, idk im not ur mom
 - Has an option for nonfancy output, for scripts
 - I used that while DMing, for secret intuition/perception PC throws, environmental stuff, NPCs...
@@ -27,7 +27,7 @@ Funky bash scripts ayo
 ![Throw](./img/Throw.png)
 
 
-**Asciirage.sh**
+### **Asciirage.sh** ###
 - Interactive script with interactive menus
 - Features colors, colors are rad
 - You can change brusch, erase, navigate
