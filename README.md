@@ -12,9 +12,9 @@ Funky bash scripts ayo
 
 <div align="center">
   <table>
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" /></td>
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" /></td>
-      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" /></td>
+      <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin1.png" />
+      <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin2.png" />
+      <img src="https://github.com/teamcons/whimsiness/blob/main/img/pin3.png" />
   </table>
 </div>
 
