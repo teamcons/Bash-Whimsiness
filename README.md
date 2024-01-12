@@ -2,12 +2,13 @@
 Funky bash scripts ayo
 
 ## 📂 Nautilus scripts/ ##
+Right-click actions. To install, put them in ~/.local/share/nautilus/scripts
+I dont know for other file managers
 
 ### 📄 pin ###
-- put it in /.local/share/nautilus/scripts
-- now from a right click you can transform any file or folder as menu entry
-- and pin it on your dock as if it were an app :)
-- include actions: delete the entry, edit it, open the location of the file or folder
+Transform any file or folder into app (appears in app grid or launcher, can be put into a dock)
+- Detects automagically the right icon to use
+- includes actions: remove the "app", edit it, open the location of the file or folder
 - Theoretically desktop agnostic
 
 <div align="center">
@@ -19,6 +20,8 @@ Funky bash scripts ayo
 </div>
 
 ## 📂 random/ ##
+Cant classify tis stuff
+
 ### 📄 Throw.sh ###
 - Throw as much dices as you want, whichever dices you want, idk im not ur mom
 - Has an option for nonfancy output, for scripts
