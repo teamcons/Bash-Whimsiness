@@ -10,7 +10,7 @@ Funky bash scripts ayo
 - include actions: delete the entry, edit it, open the locasion of the file or folder
 - Theoretically desktop agnostic
 
-![pin](./img/pin.png)
+| !(./img/pin1.png) | !(./img/pin2.png) | !(./img/pin3.png) |
 
 
 ## random/ ##
