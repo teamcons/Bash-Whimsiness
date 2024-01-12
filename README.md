@@ -3,17 +3,12 @@ Funky bash scripts ayo
 
 ## Nautilus scripts/ ##
 
-
-<p float="left">
-  <img src="/img/pin.png" />
 ###  **pin** ###
 - put it in /.local/share/nautilus/scripts
 - now from a right click you can transform any file or folder as menu entry
 - and pin it on your dock as if it were an app :)
 - include actions: delete the entry, edit it, open the locasion of the file or folder
 - Theoretically desktop agnostic
-  
-</p>
 
 ![pin](./img/pin.png)
 
