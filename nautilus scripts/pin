@@ -41,7 +41,7 @@ Actions = Location;Edit;Unpin;
 Name = Open location
 Name[de] = Standort öffnen
 Name[fr] = Ouvrir l'emplacement
-Name[es] = Localización abierta
+Name[es] = Abierta la localización 
 Exec = xdg-open '$PWD'
 
 [Desktop Action Edit]
