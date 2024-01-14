@@ -6,7 +6,7 @@
 # INSTALL: Copy in ~/.local/share/applications/nautilus/scripts
 # USAGE: Right-click on a file or folder, then on "script", then on "pin". Voilà.
 # FEATURES: Right-clicks options allow to open location of the file or folder, edit the .desktop file, or 
-# LOCALIZATION: EN, DE, FR, ES
+# LOCALIZATION: EN, DE, FR, ES, zh_CN
 # KNOWN BUGS: Not sure if icon thingy is 100% reliable
 
 ######## INIT VARIABLES ########
@@ -29,6 +29,7 @@ Comment = Open $PWD/$THING
 Comment[de] = Öffnet $PWD/$THING
 Comment[fr] = Ouvre $PWD/$THING
 Comment[es] = Abrir $PWD/$THING
+Comment[zh_CN] = 打开 $PWD/$THING
 Exec = xdg-open '$PWD/$THING'
 Icon = $ICON
 Type = Application
@@ -42,6 +43,7 @@ Name = Open location
 Name[de] = Standort öffnen
 Name[fr] = Ouvrir l'emplacement
 Name[es] = Abierta la localización 
+Name[zh_CN] = 打开位置
 Exec = xdg-open '$PWD'
 
 [Desktop Action Edit]
@@ -49,6 +51,7 @@ Name = Edit
 Name[de] = Bearbeiten
 Name[fr] = Éditer
 Name[es] = Editar
+Name[zh_CN] = 编辑
 Exec = xdg-open '$DESKTOPFILE'
 
 [Desktop Action Unpin]
@@ -56,6 +59,7 @@ Name = Unpin
 Name[de] = Loslösen
 Name[fr] = Détacher
 Name[es] = Desanclar
+Name[zh_CN] = 取消固定
 Exec = rm -f '$DESKTOPFILE'
 
 EOF
