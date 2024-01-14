@@ -5,9 +5,9 @@
 # WHAT: Create a menu entry for a file or folder, so you can put it on any dock, or open from an app launcher
 # INSTALL: Copy in ~/.local/share/applications/nautilus/scripts
 # USAGE: Right-click on a file or folder, then on "script", then on "pin". Voilà.
-# FEATURES: Right-clicks options allow to open location of the file or folder, edit the .desktop file, or 
+# FEATURES: Right-click options allow to open file or folder location, edit the .desktop file
 # LOCALIZATION: EN, DE, FR, ES
-# KNOWN BUGS: Not sure if icon thingy is 100% reliable
+# KNOWN BUGS: Not sure if the icon thingy is 100% reliable
 
 ######## INIT VARIABLES ########
 THING="$1"
@@ -59,4 +59,3 @@ Name[es] = Desanclar
 Exec = rm -f '$DESKTOPFILE'
 
 EOF
-
