@@ -9,6 +9,7 @@
 # LOCALIZATION: EN, DE, FR, ES, zh_CN
 # KNOWN BUGS: Not sure if icon thingy is 100% reliable
 
+
 ######## INIT VARIABLES ########
 THING="$1"
 SAVEIN=$HOME/.local/share/applications
@@ -63,4 +64,3 @@ Name[zh_CN] = 取消固定
 Exec = rm -f '$DESKTOPFILE'
 
 EOF
-
