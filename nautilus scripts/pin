@@ -45,6 +45,8 @@ Name[de] = Standort öffnen
 Name[fr] = Ouvrir l'emplacement
 Name[es] = Abierta la localización 
 Name[zh_CN] = 打开位置
+Name[id] = Buka Lokasi
+Name[aceh] = Buka Lokasi
 Exec = xdg-open '$PWD'
 
 [Desktop Action Edit]
@@ -53,6 +55,7 @@ Name[de] = Bearbeiten
 Name[fr] = Éditer
 Name[es] = Editar
 Name[zh_CN] = 编辑
+Name[id] = Ganto
 Exec = xdg-open '$DESKTOPFILE'
 
 [Desktop Action Unpin]
@@ -61,6 +64,7 @@ Name[de] = Loslösen
 Name[fr] = Détacher
 Name[es] = Desanclar
 Name[zh_CN] = 取消固定
+Name[id] = Peulheh
 Exec = rm -f '$DESKTOPFILE'
 
 EOF
