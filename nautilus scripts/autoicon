@@ -1,0 +1,42 @@
+#!/bin/bash
+# USAGE :
+
+######## INIT VARIABLES ########
+ARG=$1
+DEPTH="2"
+
+######## SCRIPT ########
+
+COUNT_DOC=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(pdf|txt|odt|doc|ppt|xls|docx|pptx|xlsx)$' | wc -l)
+COUNT_PICTURES=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(png|jpg|webp|gif)$' | wc -l)
+COUNT_MUSIC=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(ogg|mp3)$' | wc -l)
+COUNT_VIDEOS=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(mp4)$' | wc -l)
+
+ar=($COUNT_DOC $COUNT_PICTURES $COUNT_MUSIC $COUNT_VIDEOS)
+IFS=$'\n' ; HIGHEST=$("${ar[*]}" | sort -nr | head -n1)
+
+
+case $HIGHEST in
+	$COUNT_DOC)
+	gio set -t string $ARG metadata::custom-icon-name folder-documents
+	;;
+
+
+	$COUNT_PICTURES)
+	gio set -t string $ARG metadata::custom-icon-name folder-pictures	
+	;;
+
+
+	$COUNT_MUSIC)
+	gio set -t string $ARG metadata::custom-icon-name folder-music
+	;;
+
+
+	$COUNT_VIDEOS)
+	gio set -t string $ARG metadata::custom-icon-name folder-videos
+	;;
+esac
+
+
+
+#publicshare recent insync-folder user-home download
