@@ -1,39 +1,43 @@
 #!/bin/bash
-# USAGE :
+# USAGE : change folder icon to reflect content
+# Ex, folder-pictures if folder has lots of pictures
 
 ######## INIT VARIABLES ########
-ARG=$1
+ARG="$1"
 DEPTH="2"
 
 ######## SCRIPT ########
 
-COUNT_DOC=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(pdf|txt|odt|doc|ppt|xls|docx|pptx|xlsx)$' | wc -l)
-COUNT_PICTURES=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(png|jpg|webp|gif)$' | wc -l)
-COUNT_MUSIC=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(ogg|mp3)$' | wc -l)
-COUNT_VIDEOS=$(find $1/ -maxdepth $DEPTH -not -type d | grep -iE  '.(mp4)$' | wc -l)
+# Count how much of each type in the folder
+COUNT_DOC=$(find "$ARG" -maxdepth $DEPTH -not -type d | grep -iE  '.(pdf|txt|odt|doc|ppt|xls|docx|pptx|xlsx)$' | wc -l)
+COUNT_PICTURES=$(find "$ARG" -maxdepth $DEPTH -not -type d | grep -iE  '.(png|jpg|webp|gif)$' | wc -l)
+COUNT_MUSIC=$(find "$ARG" -maxdepth $DEPTH -not -type d | grep -iE  '.(ogg|mp3)$' | wc -l)
+COUNT_VIDEOS=$(find "$ARG" -maxdepth $DEPTH -not -type d | grep -iE  '.(mp4)$' | wc -l)
 
-ar=($COUNT_DOC $COUNT_PICTURES $COUNT_MUSIC $COUNT_VIDEOS)
-IFS=$'\n' ; HIGHEST=$("${ar[*]}" | sort -nr | head -n1)
+# Group
+declare -a ar=($COUNT_DOC $COUNT_PICTURES $COUNT_MUSIC $COUNT_VIDEOS)
 
+# Get highest
+HIGHEST=$(echo ${ar[*]} | sort -nr | cut -f 1 -d " ")
 
+# Find which one it belongs to
+# And set appropriate icon
 case $HIGHEST in
 	$COUNT_DOC)
-	gio set -t string $ARG metadata::custom-icon-name folder-documents
+	gio set -t string "$ARG" metadata::custom-icon-name folder-documents
 	;;
-
 
 	$COUNT_PICTURES)
-	gio set -t string $ARG metadata::custom-icon-name folder-pictures	
+	gio set -t string "$ARG" metadata::custom-icon-name folder-pictures	
 	;;
 
-
 	$COUNT_MUSIC)
-	gio set -t string $ARG metadata::custom-icon-name folder-music
+	gio set -t string "$ARG" metadata::custom-icon-name folder-music
 	;;
 
 
 	$COUNT_VIDEOS)
-	gio set -t string $ARG metadata::custom-icon-name folder-videos
+	gio set -t string "$ARG" metadata::custom-icon-name folder-videos
 	;;
 esac
 
