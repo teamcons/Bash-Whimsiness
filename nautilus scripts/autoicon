@@ -20,6 +20,7 @@ declare -a ar=($COUNT_DOC $COUNT_PICTURES $COUNT_MUSIC $COUNT_VIDEOS)
 # Get highest
 IFS=$'\n' sorted=($(sort -nr <<<"${ar[*]}"))
 HIGHEST=${sorted[0]}
+unset IFS
 
 # Find which one it belongs to
 # And set appropriate icon
