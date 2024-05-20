@@ -18,29 +18,20 @@ COUNT_VIDEOS=$(find "$ARG" -maxdepth $DEPTH -not -type d | grep -iE  '.(mp4)$' |
 declare -a ar=($COUNT_DOC $COUNT_PICTURES $COUNT_MUSIC $COUNT_VIDEOS)
 
 # Get highest
-HIGHEST=$(echo ${ar[*]} | sort -nr | cut -f 1 -d " ")
+IFS=$'\n' sorted=($(sort -nr <<<"${ar[*]}"))
+HIGHEST=${sorted[0]}
 
 # Find which one it belongs to
 # And set appropriate icon
 case $HIGHEST in
-	$COUNT_DOC)
-	gio set -t string "$ARG" metadata::custom-icon-name folder-documents
-	;;
-
-	$COUNT_PICTURES)
-	gio set -t string "$ARG" metadata::custom-icon-name folder-pictures	
-	;;
-
-	$COUNT_MUSIC)
-	gio set -t string "$ARG" metadata::custom-icon-name folder-music
-	;;
-
-
-	$COUNT_VIDEOS)
-	gio set -t string "$ARG" metadata::custom-icon-name folder-videos
-	;;
+	$COUNT_DOC) ico="folder-documents" ;;
+	$COUNT_PICTURES) ico="folder-pictures" ;;
+	$COUNT_MUSIC) ico="folder-music" ;;
+	$COUNT_VIDEOS) ico="folder-videos" ;;
 esac
 
-
+echo "setting $ico"
+gio set -t string "$ARG" metadata::custom-icon-name $ico && \
+notify-send --app-name "Set icon" --icon $ico "Successfully set icon folder! Refresh file manager view to see new icon :)"
 
 #publicshare recent insync-folder user-home download

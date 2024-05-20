@@ -22,6 +22,18 @@ Transform any file or folder into a pseudo "app", so it appears in the app grid 
 </div>
 
 
+### 📄 autoicon ###
+Change folder icon to reflect its content.
+For example, put folder-pictures icon if the detected content of the folder is mostly pictures.
+This is done in a way that adapts to icon theme change.
+
+<div align="center">
+  <table>
+      <td><img src="https://github.com/teamcons/whimsiness/blob/main/img/autoicon.png" /></td>
+  </table>
+</div>
+
+
 
 ## 📂 random/ ##
 Can't classify this stuff
@@ -48,19 +60,6 @@ Can't classify this stuff
 
 <div align="center">
     <img src="https://github.com/teamcons/whimsiness/blob/main/img/asciirage.png" /></td>
-</div>
-
-
-
-### 📄 fix-deepin-icon-theme.sh (not up yet) ###
-Require: deepin-icon-theme installed.
-Create a local icon theme, which inherits from deepin-icon-theme, but:
-- Which also fixes non-standard stuff in the original theme (like broken download icon).
-- Have icons made for Deepin DE be applied to GNOME apps.
-- Have deepin icons be applied a bit more broadly outside of their DE.
-
-<div align="center">
-    <img src="https://github.com/teamcons/whimsiness/blob/main/img/fix-deepin-icon-theme.png" /></td>
 </div>
 
 
