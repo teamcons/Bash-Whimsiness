@@ -10,6 +10,7 @@
 # If script is not ran as root, sudo itself
 if [[ $EUID -ne 0 ]];
 then
+    echo "$(basename $0) requires root permissions to function"
     exec sudo /bin/bash "$0" "$@"
 fi
 
