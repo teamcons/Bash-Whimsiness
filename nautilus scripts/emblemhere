@@ -1,0 +1,15 @@
+#!/bin/bash
+
+table=(\
+~/image.png "description1" 0  \
+~/image.png "description2" 1 \
+~/image.png "description3" 2)
+
+
+zenity --list --title="page title" --text="some random text" --imagelist --ok-label=Open --cancel-label=Home --print-column=6 --separator=' ' --width=600 --height=400 \
+   --column="Icon"  \
+   --column="Name" \
+   "${table[@]}"
+
+echo "setting $ico"
+gio set -t string "$ARG" metadata::custom-icon-name $ico
