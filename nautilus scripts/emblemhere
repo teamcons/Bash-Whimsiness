@@ -1,15 +1,39 @@
 #!/bin/bash
 
-table=(\
-~/image.png "description1" 0  \
-~/image.png "description2" 1 \
-~/image.png "description3" 2)
+# Set emblems on files
+
+# where
+ICONTHEMEPATH="/usr/share/icons/Elementary/emblems/24"
+
+# Table format
+#table=(\
+#path/image.png name 0  \
+#path/image.png name 1 \
+#path/image.png name 2)
 
 
-zenity --list --title="page title" --text="some random text" --imagelist --ok-label=Open --cancel-label=Home --print-column=6 --separator=' ' --width=600 --height=400 \
+# Build a table of all emblems
+# path name index
+
+count=0
+table=()
+for icon in "$(ls $ICONTHEMEPATH)"
+do
+   # Add to table
+   table = $table + ( $ICONTHEMEPATH/$icon ${icon%.*}  $count)
+   count = $count + 1
+done
+
+
+# Offer choice to user
+choice=$(zenity --list --title="Add embleme here" --text="Choose your fighter" --imagelist --ok-label=Assign --cancel-label=No --separator=' ' --width=600 --height=400 \
    --column="Icon"  \
    --column="Name" \
-   "${table[@]}"
+   "${table[@]}")
 
-echo "setting $ico"
+choice = $choice - 2
+emblempath= ${table[$choice]}
+
+
+# TODO Need to check manual for emblems
 gio set -t string "$ARG" metadata::custom-icon-name $ico
