@@ -16,8 +16,8 @@ SAVEIN=$HOME/.local/share/applications
 DESKTOPFILE="$SAVEIN/${THING}.desktop"
 ICON=$(gio info "$THING" | grep standard::icon | cut -d ':' -f 4 | cut -d ',' -f 1)
 
-if [ -d $THING ] ; then KEYWORDS="pinned;folder;"
-elif [ -f $THING ] ; then KEYWORDS="pinned;file;"
+if [ -d "$THING" ] ; then KEYWORDS="pinned;folder;"
+elif [ -f "$THING" ] ; then KEYWORDS="pinned;file;"
 else KEYWORDS="pinned;$ICON;"
 fi
 
